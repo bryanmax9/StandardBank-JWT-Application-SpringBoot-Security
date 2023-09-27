@@ -42,8 +42,22 @@
             <artifactId>jjwt</artifactId>
             <version>0.9.1</version> <!-- Use the latest version available -->
         </dependency>
+		<!-- JAXB API -->
+		<dependency>
+			<groupId>jakarta.xml.bind</groupId>
+			<artifactId>jakarta.xml.bind-api</artifactId>
+			<version>2.3.3</version>
+		</dependency>
 
-    </dependencies>
+		<!-- JAXB Runtime -->
+		<dependency>
+			<groupId>org.glassfish.jaxb</groupId>
+			<artifactId>jaxb-runtime</artifactId>
+			<version>2.3.3</version>
+		</dependency>
+
+
+	</dependencies>
 
 	<build>
 		<plugins>

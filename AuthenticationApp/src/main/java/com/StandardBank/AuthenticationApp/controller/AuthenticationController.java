@@ -1,5 +1,6 @@
 package com.StandardBank.AuthenticationApp.controller;
 import com.StandardBank.AuthenticationApp.model.JwtUtil;
+import com.StandardBank.AuthenticationApp.service.AuthenticationService;
 import com.StandardBank.AuthenticationApp.model.UserCredentials;
 import com.StandardBank.AuthenticationApp.service.AuthenticationService;
 import org.springframework.beans.factory.annotation.Autowired;

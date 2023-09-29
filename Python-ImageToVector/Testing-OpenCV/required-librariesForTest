@@ -1,6 +1,6 @@
 //All documentation and credits of the code to:
 https://docs.opencv.org/3.4/db/d27/tutorial_py_table_of_contents_feature2d.html
 
-//for me i would need to do this before those commands "C:/Users/brill/AppData/Local/Microsoft/WindowsApps/python3.10.exe -m"
+//for me i would need to do this before those commands "C:/Users/brill/AppData/Local/Microsoft/WindowsApps/python3.10.exe -m":
 pip install opencv-python
 pip install opencv-contrib-python

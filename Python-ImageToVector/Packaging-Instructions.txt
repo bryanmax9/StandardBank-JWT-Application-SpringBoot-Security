@@ -1,0 +1,32 @@
+#Steps to package the Lambda
+
+#first use:
+pip install --upgrade pip
+
+----------------------------------------------------------------------------------------------------------------
+
+1.Install the necessary packages to a directory:
+
+pip install -r requirements.txt -t ./PythonLambdaFunction/
+
+#if thst dosent work then use:
+
+pip install boto3 -t ./PythonLambdaFunction/
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+2.Add your lambda function and any additional files to the package directory:
+
+cp LambdaFunction-Process-S3.py ./PythonLambdaFunction/
+
+------------------------------------------------------------------------------------------------------------------
+
+3.Create a ZIP archive of your package:
+
+cd PythonLambdaFunction && zip -r ../deployment_package.zip .
+
+#in Powershell(windows) then it would be:
+
+cd PythonLambdaFunction; Compress-Archive -Path * -DestinationPath ../deployment_package.zip
+

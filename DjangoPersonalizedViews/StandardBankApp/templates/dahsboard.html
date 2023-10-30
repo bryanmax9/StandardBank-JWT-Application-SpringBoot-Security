@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <!-- Assuming you have a CSS file named styles.css -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome, {{ first_name }}!</h1>
+      <h2>Transactions in the Last 30 Days</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Amount</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for transaction in transactions %}
+          <tr>
+            <td>{{ transaction.id }}</td>
+            <td>{{ transaction.amount }}</td>
+            <td>{{ transaction.status }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <h2>Time Spent in App</h2>
+      <p>
+        You've spent {{ time_spent_in_app }} in the app over the last 30 days.
+      </p>
+    </div>
+  </body>
+</html>

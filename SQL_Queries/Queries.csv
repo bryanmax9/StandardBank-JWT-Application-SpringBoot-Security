@@ -1,0 +1,7 @@
+SELECT * FROM user WHERE email = 'john-smith1992@gmail.com';
+SELECT SUM(clicks) FROM app_usage WHERE user_id = '2921-299-1929182';
+SELECT COUNT(DISTINCT device) FROM app_usage WHERE user_id = '2921-299-1929182';
+SELECT * FROM transactions WHERE sender_id = '2921-299-1929182' OR recipient_id = '2921-299-1929182';
+SELECT * FROM transactions WHERE (sender_id = '2921-299-1929182' OR recipient_id = '2921-299-1929182') AND timestamp >= NOW() - INTERVAL 30 DAY;
+SELECT * FROM transactions WHERE status = 'FAILED';
+SELECT u.email, COUNT(t.id) AS transaction_count FROM user u JOIN transactions t ON u.id = t.sender_id GROUP BY u.email ORDER BY transaction_count DESC;

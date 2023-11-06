@@ -30,36 +30,12 @@ This project integrates a SpringBoot application for face authentication, an AWS
 
 ### Installation Steps:
 
-1. **Django Setup**:
-   - Navigate to the Django project directory.
-   - Run `pip install -r requirements.txt` to install the necessary dependencies. (Note: Make sure you have a `requirements.txt` file).
-   - Run migrations: `python manage.py migrate`
-   - Start the server: `python manage.py runserver`
-
-2. **SpringBoot Setup**:
-   - Navigate to the SpringBoot directory.
-   - Use Maven or Gradle commands to build and run the application, e.g., `./mvnw spring-boot:run`
-
-3. **AWS Lambda**:
-   - Deploy your AWS Lambda function using the AWS SAM CLI or via the AWS Console.
-
-### Configuration:
-Make sure to update the settings, application properties, and Lambda environment variables with your specific configurations, API keys, and endpoint URLs.
+To be Written.... 
 
 ## Usage
 
 1. Access the SpringBoot application and upload your face image for authentication.
 2. If authentication is successful, you'll be redirected to the Django dashboard where you can view your details and transactions.
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
-
 
 ## Sources Used
 

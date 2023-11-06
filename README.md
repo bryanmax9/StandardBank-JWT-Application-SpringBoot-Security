@@ -22,10 +22,10 @@ This project integrates a SpringBoot application for face authentication, an AWS
 
 ### Prerequisites:
 
-- Python (Version x.x.x recommended)
-- Django (Version x.x.x recommended)
-- Java (Version x.x.x recommended)
-- SpringBoot (Version x.x.x recommended)
+- Python 
+- Django 
+- Java 
+- SpringBoot 
 - AWS CLI and AWS SAM CLI
 
 ### Installation Steps:
